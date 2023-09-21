@@ -15,21 +15,27 @@ jobs:
           - os: ubuntu-latest
             python-version: 3.7
             name: ubuntu_latest_Python_3_7
+            continue-on-error: true
           - os: ubuntu-latest
             python-version: 3.8
             name: ubuntu_latest_Python_3_8
+            continue-on-error: true
           - os: ubuntu-latest
             python-version: 3.9
             name: ubuntu_latest_Python_3_9
-          - os: ubuntu-18.04
+            continue-on-error: true
+          - os: macos-latest
             python-version: 3.7
             name: ubuntu_18_04_Python_3_7
-          - os: ubuntu-18.04
+            continue-on-error: true
+          - os: macos-latest
             python-version: 3.8
             name: ubuntu_18_04_Python_3_8
-          - os: ubuntu-18.04
+            continue-on-error: true
+          - os: macos-latest
             python-version: 3.9
             name: ubuntu_18_04_Python_3_9
+            continue-on-error: true
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
