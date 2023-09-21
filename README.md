@@ -19,5 +19,7 @@ This project illustrates the use of matrix testing using Github actions. This pr
 
 ---
 ## Example Succesful Workflow Run
+Link to example succesful run:
+https://github.com/nogibjj/rmr_62_matrix_testing/actions/runs/6265498581
 
 ![Matrix Testing](https://user-images.githubusercontent.com/36940292/269713380-0218b82a-f717-4dc3-96a5-3a3432282470.png)
