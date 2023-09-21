@@ -11,4 +11,4 @@
 
 This project illustrates the use of matrix testing using Github actions workflows. This project tests the code in this repo using three versions of python, and two operating systems.
 
-![Matrix Testing](https://user-images.githubusercontent.com/36940292/269696659-31c9fa7c-bc81-4316-93f2-bb58ef8d72fe.png)
+![Matrix Testing](https://user-images.githubusercontent.com/36940292/269713380-0218b82a-f717-4dc3-96a5-3a3432282470.png)
