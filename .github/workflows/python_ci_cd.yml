@@ -11,8 +11,27 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        python-version: [3.8, 3.9, 3.10]
+        os: [ubuntu-latest, ubuntu-18.04]
+        python-version: [3.7, 3.8, 3.9]
+        include:
+          - os: ubuntu-latest
+            python-version: 3.7
+            name: ubuntu_latest_Python_3_7
+          - os: ubuntu-latest
+            python-version: 3.8
+            name: ubuntu_latest_Python_3_8
+          - os: ubuntu-latest
+            python-version: 3.9
+            name: ubuntu_latest_Python_3_9
+          - os: windows-latest
+            python-version: 3.7
+            name: ubuntu_18_04_Python_3_7
+          - os: windows-latest
+            python-version: 3.8
+            name: ubuntu_18_04_Python_3_8
+          - os: windows-latest
+            python-version: 3.9
+            name: ubuntu_18_04_Python_3_9
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
@@ -30,8 +49,8 @@ jobs:
       - name: Build status badge
         uses: RubbaBoy/BYOB@v1.3.0
         with:
-          NAME: ${{ matrix.os }}, ${{ matrix.python-version}}
-          LABEL: ${{ matrix.os }}, ${{ matrix.python-version}}
+          NAME: ${{ matrix.name }}
+          LABEL: ${{ matrix.name }}
           STATUS: ${{ job.status }}
           COLOR: ${{ job.status == 'success' && 'green' || job.status == 'failure' && 'red' || 'yellow' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
