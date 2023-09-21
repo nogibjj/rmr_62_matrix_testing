@@ -11,6 +11,6 @@
 ![3.9 mac_latest](https://byob.yarr.is/nogibjj/rmr_62_matrix_testing/ubuntu_18_04_Python_3_8)
 ![3.10 mac_latest](https://byob.yarr.is/nogibjj/rmr_62_matrix_testing/ubuntu_18_04_Python_3_9)
 
-This prohject illustrates the use of matrix testing using Github workflows. Matrix testing is done to make sure your code works for multiple versions of your chosen programming lanugae and operating systems.
+This project illustrates the use of matrix testing using Github actions workflows. This project tests the code in this repo using three versions of python, and two operating systems.
 
-![Matrix Testing]https://user-images.githubusercontent.com/36940292/269696659-31c9fa7c-bc81-4316-93f2-bb58ef8d72fe.png)
+![Matrix Testing](https://user-images.githubusercontent.com/36940292/269696659-31c9fa7c-bc81-4316-93f2-bb58ef8d72fe.png)
